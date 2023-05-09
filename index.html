@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Othello</title>
+    <link rel="stylesheet" type="text/css" href="Assets/css/main.css" />
+  </head>
+  <style type="text/css"></style>
+  <body>
+    <h1>Othello</h1>
+    <div class="container">
+      <div class="left">Black : <span>2</span></div>
+      <div class="right">White : <span>2</span></div>
+    </div>
+    <table></table>
+    <div class="modal">
+      <div class="box">
+        <h2>Choose your pawn to start</h2>
+        <button onclick="set_pawn(this)"><div class="pawn-black"></div></button>
+        <button onclick="set_pawn(this)"><div class="pawn-white"></div></button>
+      </div>
+    </div>
+    <button class="restart" onclick="return confirm('are you sure?')">Restart</button>
+    <script src="script.js"></script>
+  </body>
+</html>
